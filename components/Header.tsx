@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ThemeToggler } from './ThemeToggler';
 import SearchInput from './SearchInput';
+import GenreDropdown from './GenreDropdown';
 
 
 const Header = () => {
@@ -12,7 +13,7 @@ const Header = () => {
                 <Image className='cursor-pointer invert-0 dark:invert' src="https://links.papareact.com/a943ae" alt='Disney+' width={120} height={100} />
             </Link>
             <div className='flex space-x-2'>
-                {/* Genre dropdown */}
+                <GenreDropdown />
                 <SearchInput />
                 <ThemeToggler />
             </div>
