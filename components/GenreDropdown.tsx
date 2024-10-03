@@ -24,7 +24,7 @@ const GenreDropdown: React.FC = () => {
                 method: 'GET',
                 headers: {
                     accept: 'application/json',
-                    Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MGVhNTcyMzljNDhlYWZlODE5Y2Q3NTFkOGM2YWI4ZSIsIm5iZiI6MTcyNzgzMzEzNC45NTY3NDksInN1YiI6IjY2ZmNhMzY2YzZmYmIyZjBjZGYyMmJkMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tDZWjAAdW6YH0eJq9m_9V_U6PqyVGVYEZJJWueFoYJk`, // Prefixed with NEXT_PUBLIC_
+                    Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_API_KEY}`, // Prefixed with NEXT_PUBLIC_
                 },
             };
 
